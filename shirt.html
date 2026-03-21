@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipcart</title>
+    <link rel="icon" href="Flipkart logo.png">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div id="nav1">
+        <a href="index.html"><img id="logo1" src="image.png"></a>
+        <div id="search1">
+            <h3 style="margin: 5px;">🔍</h3>
+            <input id="searchbar" type="text" placeholder="Search">
+        </div>
+        <button>
+            <span class="user-icon1">👤</span> Login <span class="caret">▾</span>
+        </button>
+        <button>
+            <span class="user-icon1">More</span>
+        </button>
+        <a href="cart.html">
+            <button>
+                <span class="user-icon1">Cart 🛒</span>
+            </button>
+        </a>
+    </div>
+    <div class="Container">
+        <div class="detail">
+            <img src="shirt images/1.jpg">
+            <hr>
+            <h3 class="col">Black,Men regular fit</h3>
+            <h3>₹435</h3>
+            <div class="buy">
+                <h3>Size : 32</h3>
+                <button onclick="addcart('Shirt',435,'shirt images/1.jpg')">Add to cart</button>
+            </div>
+        </div>
+        <div class="detail">
+            <img src="shirt images/2.jpg">
+            <hr>
+            <h3 class="col">Casual Shirt</h3>
+            <h3>₹459</h3>
+            <div class="buy">
+                <h3>Size : 34</h3>
+                <button onclick="addcart('Shirt',459,'shirt images/2.jpg')">Add to cart</button>
+            </div>
+        </div>
+        <div class="detail">
+            <img src="shirt images/3.jpg">
+            <hr>
+            <h3 class="col">Casual Shirt</h3>
+            <h3>₹300</h3>
+            <div class="buy">
+                <h3>Size : 32</h3>
+                <button onclick="addcart('Shirt',300,'shirt images/3.jpg')">Add to cart</button>
+            </div>
+        </div>
+        <div class="detail">
+            <img src="shirt images/4.jpg">
+            <hr>
+            <h3 class="col">White,Regular fit</h3>
+            <h3>₹435</h3>
+            <div class="buy">
+                <h3>Size : M</h3>
+                <button onclick="addcart('Shirt',435,'shirt images/4.jpg')">Add to cart</button>
+            </div>
+        </div>
+        <div class="detail">
+            <img src="shirt images/5.jpg">
+            <hr>
+            <h3 class="col">Men Slim fit</h3>
+            <h3>₹510</h3>
+            <div class="buy">
+                <h3>Size : 34</h3>
+                <button onclick="addcart('Shirt',510,'shirt images/5.jpg')">Add to cart</button>
+            </div>
+        </div>
+        <div class="detail">
+            <img src="shirt images/6.jpg">
+            <hr>
+            <h3 class="col">Men Slim fit</h3>
+            <h3>₹480</h3>
+            <div class="buy">
+                <h3>Size : S</h3>
+                <button onclick="addcart('Shirt',480,'shirt images/6.jpg')">Add to cart</button>
+            </div>
+        </div>
+        <div class="detail">
+            <img src="shirt images/7.jpg">
+            <hr>
+            <h3 class="col">Printed Shirt</h3>
+            <h3>₹378</h3>
+            <div class="buy">
+                <h3>Size : M</h3>
+                <button onclick="addcart('Shirt',378,'shirt images/7.jpg')">Add to cart</button>
+            </div>
+        </div>
+        <div class="detail">
+            <img src="shirt images/8.jpg">
+            <hr>
+            <h3 class="col">Denim Shirt</h3>
+            <h3>₹405</h3>
+            <div class="buy">
+                <h3>Size : L</h3>
+                <button onclick="addcart('Shirt',405,'shirt images/8.jpg')">Add to cart</button>
+            </div>
+        </div>
+        <div class="detail">
+            <img src="shirt images/9.jpg">
+            <hr>
+            <h3 class="col">Casual Shirt</h3>
+            <h3>₹475</h3>
+            <div class="buy">
+                <h3>Size : 32</h3>
+                <button onclick="addcart('Shirt',475,'shirt images/9.jpg')">Add to cart</button>
+            </div>
+        </div>
+        <div class="detail">
+            <img src="shirt images/10.jpg">
+            <hr>
+            <h3 class="col">Checked Shirt</h3>
+            <h3>₹489</h3>
+            <div class="buy">
+                <h3>Size : M</h3>
+                <button onclick="addcart('Shirt',489,'shirt images/10.jpg')">Add to cart</button>
+            </div>
+        </div>
+        <div class="detail">
+            <img src="shirt images/11.jpg">
+            <hr>
+            <h3 class="col">Black and orange slim fit</h3>
+            <h3>₹604</h3>
+            <div class="buy">
+                <h3>Size : L</h3>
+                <button onclick="addcart('Shirt',604,'shirt images/11.jpg')">Add to cart</button>
+            </div>
+        </div>
+        <div class="detail">
+            <img src="shirt images/12.jpg">
+            <hr>
+            <h3 class="col">Casual Shirt</h3>
+            <h3>₹580</h3>
+            <div class="buy">
+                <h3>Size : 32</h3>
+                <button onclick="addcart('Shirt',580,'shirt images/12.jpg')">Add to cart</button>
+            </div>
+        </div>
+        <div class="detail">
+            <img src="shirt images/13.jpg">
+            <hr>
+            <h3 class="col">Printed Shirt</h3>
+            <h3>₹495</h3>
+            <div class="buy">
+                <h3>Size : L</h3>
+                <button onclick="addcart('Shirt',495,'shirt images/13.jpg')">Add to cart</button>
+            </div>
+        </div>
+        <div class="detail">
+            <img src="shirt images/14.jpg">
+            <hr>
+            <h3 class="col">Casual Shirt</h3>
+            <h3>₹430</h3>
+            <div class="buy">
+                <h3>Size : 34</h3>
+                <button onclick="addcart('Shirt',430,'shirt images/14.jpg')">Add to cart</button>
+            </div>
+        </div>
+        <div class="detail">
+            <img src="shirt images/15.jpg">
+            <hr>
+            <h3 class="col">Printed Shirt</h3>
+            <h3>₹399</h3>
+            <div class="buy">
+                <h3>Size : M</h3>
+                <button onclick="addcart('Shirt',399,'shirt images/15.jpg')">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script src="cartscript.js"></script>
+</body>
+
+</html>

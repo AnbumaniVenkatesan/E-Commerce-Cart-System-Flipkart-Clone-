@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flipkart</title>
+    <link rel="icon" href="Flipkart logo.png">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div id="nav">
+        <div id="top">
+            <img id="logo" src="image.png">
+            <div id="loc"><span>set location</span>
+                <a href="#">Select current location ></a>
+            </div>
+        </div>
+        <div class="bottom">
+            <div id="search">
+                <h3 style="margin: 5px;">🔍</h3>
+                <input id="searchbar" type="text" placeholder="Search for products , Brand and More">
+            </div>
+            <button class="nav-btn">
+                <span class="user-icon">👤</span> Login <span class="caret">▾</span>
+            </button>
+            <button class="nav-btn">
+                <span class="user-icon">More</span>
+            </button>
+            <a href="cart.html" style="margin-top: 15px;">
+                <button class="nav-btn">
+                    <span class="user-icon">Cart 🛒</span>
+                </button></a>
+        </div>
+    </div>
+    <hr>
+    <!-- banner -->
+    <div class="slider-wrap">
+        <div class="slider" id="slider">
+            <div class="slide"><img src="banner img/img1.png" alt="Banner 1"></div>
+            <div class="slide"><img src="banner img/img2.png" alt="Banner 2"></div>
+            <div class="slide"><img src="banner img/img3.png" alt="Banner 3"></div>
+            <div class="slide"><img src="banner img/img4.png" alt="Banner 4"></div>
+            <div class="slide"><img src="banner img/img5.png" alt="Banner 5"></div>
+        </div>
+    </div>
+    <div class="dots" id="dots"></div>
+    <!-- products -->
+    <div class="product">
+        <a style="text-decoration: none;" href="shirt.html">
+            <div class="pro">
+                <img src="product/shirt image.jpg">
+                <h3>SHIRT</h3>
+            </div>
+        </a>
+
+        <div class="pro">
+            <img src="product/shoe image.jpg">
+            <h3>SHOES</h3>
+        </div>
+        <div class="pro">
+            <img src="product/t-shirt image.jpg" alt="image loading">
+            <h3>T-SHIRT</h3>
+        </div>
+        <div class="pro">
+            <img src="product/watch image.jpg">
+            <h3>WATCH</h3>
+        </div>
+        <div class="pro">
+            <img src="product/bag image.jpg">
+            <h3>BAGS</h3>
+        </div>
+    </div>
+
+
+    <!-- <script src="script.js"></script> -->
+    <script src="cartscript.js"></script>
+</body>
+
+</html>

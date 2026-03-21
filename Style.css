@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* index.page nav bar */
+#nav {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(240, 242, 249);
+    color: rgb(13, 13, 13);
+    position: sticky;
+    top: -1px;
+    z-index: 100;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#top {
+    height: 40%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#logo {
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+#loc {
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+#loc a {
+    color: #2874F0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#search {
+    width: 60%;
+    min-height: 10px;
+    border-radius: 15px;
+    display: inline-flex;
+    margin-left: 20px;
+    border-style: solid;
+    border-color: rgb(63, 12, 245);
+    font-size: 24px;
+}
+
+#searchbar {
+    width: 92%;
+    height: 40px;
+    margin: 5px;
+    border-style: none;
+    font-size: 20px;
+}
+
+#searchbar:focus {
+    outline: none;
+}
+
+.nav-btn {
+    margin-left: 30px;
+    border-style: none;
+    font-size: 18px;
+}
+
+#belownav {
+    width: 100%;
+    height: 8vh;
+    background-color: rgb(248, 233, 204);
+}
+
+/* shirt.page nav bar */
+#nav1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(68, 12, 238);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+#logo1 {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+#search1 {
+    width: 300px;
+    height: 30px;
+    display: flex;
+    border-style: solid;
+    align-items: center;
+    margin-top: 8px;
+    background-color: #eee;
+}
+
+#search1 input {
+    height: 30px;
+}
+
+.user-icon1 {
+    height: 40px;
+    color: #ffffff;
+    background-color: rgb(68, 12, 238);
+    font-weight: 700;
+}
+
+#nav1 button {
+    background-color: rgb(68, 12, 238);
+    color: #ffffff;
+    border: none;
+    font-weight: 700;
+    height: 40px;
+}
+
+/* banner */
+.slider-wrap {
+    width: 95%;
+    margin: 20px auto;
+}
+
+.slider {
+    display: flex;
+    gap: 22px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    flex: 0 0 62%;
+    border-radius: 22px;
+    overflow: hidden;
+    background: #eee;
+}
+
+.slide img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.dots button {
+    width: 8px;
+    height: 8px;
+    border: none;
+    border-radius: 50%;
+    background: #cfcfcf;
+    cursor: pointer;
+}
+
+.dots button.active {
+    width: 22px;
+    border-radius: 20px;
+    background: #111;
+}
+
+/* product */
+.product {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.pro img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+}
+
+.pro {
+    border-style: groove;
+    width: 200px;
+    height: 225px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: grey;
+    border-radius: 15%;
+}
+
+/* shirt product */
+.Container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(247, 248, 249);
+}
+
+.detail {
+    height: 290px;
+    margin: 40px;
+    text-align: center;
+    border-style: groove;
+    border-radius: 15%;
+    font-family: cursive;
+}
+
+.detail img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+}
+
+.col {
+    color: #858080;
+}
+
+.buy {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buy button {
+    width: 100px;
+    height: 30px;
+    background-color: #038bf4;
+    border-radius: 15px;
+}
+.cart-container {
+  display: flex;
+  gap: 20px;
+}
+
+.left {
+  width: 70%;
+}
+
+.right {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid gray;
+}
+/* cart page */
+/* .cartpage{
+    display: flex;
+}
+.items {
+    width: 65%;
+    height: 1000px;
+    box-shadow: 0 5px 10px rgba(40, 38, 38, 0.3);
+}
+
+.address {
+    display: flex;
+    width: 80%;
+    height: 40px;
+    margin-left: 10%;
+    margin-top: 20px;
+    padding-left: 10px;
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(40, 38, 38, 0.3);
+}
+.pin {
+    padding: 5px;
+    color: #050588;
+}
+.order{
+    width: 35%;
+}
+.order1{
+    display: flex;
+    justify-content:space-between ;
+    padding: 20px;
+}
+.off{
+    width: 100%;
+    border-style:none;
+    text-align: center;
+    margin-top: 15px;
+    height: 45px;
+    margin-bottom: -10px;
+    box-shadow: 0 5px 10px rgba(138, 131, 131, 0.3);
+}
+.off p,h4{
+    display:inline;
+    color: #339d4a;
+}
+.off1{
+    width: 75%;
+    height: 75%;
+    background-color: #c5dbca;
+    text-align: center;
+    margin-left: 12.5%;
+    padding-top:10px;
+    border-radius: 2px;
+}
+.secure{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    margin-top: 6%;
+    margin-left: 20%;
+    color: #636161;
+    font-weight: 700;  
+    margin-bottom: 0;
+}
+.secure img{
+    width: 33px;
+    height: 33px;
+}
+.secure1{
+    width: 100%;
+    height: 8px;
+    box-shadow: 0 5px 10px rgba(40, 38, 38, 0.3);
+}
+.total{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.total1{
+    width: 120px;
+    height: 28px;
+    background-color: yellow;
+    text-align: center;
+    border-radius: 5px;
+} */
+
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 125px;
+  margin-left: 550px;
+}
+.empty-cart h2{
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
