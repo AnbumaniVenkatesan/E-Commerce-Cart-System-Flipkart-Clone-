@@ -10,17 +10,17 @@ if (document.getElementById("slider")) {
   let index = 0;
   let timer = null;
 
-  // slides.forEach((_, i) => {
-  //   const dot = document.createElement("button");
-  //   dot.addEventListener("click", () => {
-  //     goTo(i);
-  //     restartAuto();
-  //   });
-  //   dotsWrap.appendChild(dot);
-  // });
+  slides.forEach((_, i) => {
+    const dot = document.createElement("button");
+    dot.addEventListener("click", () => {
+      goTo(i);
+      restartAuto();
+    });
+    dotsWrap.appendChild(dot);
+  });
 
-  for(var i=0;i<slides.length;i++){
-    const dot=document.createElement("button");
+  for (var i = 0; i < slides.length; i++) {
+    const dot = document.createElement("button");
     dotsWrap.appendChild(dot);
   }
 
@@ -139,18 +139,18 @@ function removeFromCart(i) {
 // RENDER CART — builds the cart UI
 // =====================
 function renderCart() {
-  let cart        = getCart();
-  let container   = document.getElementById("cart-items");
-  let emptyCart   = document.querySelector(".empty-cart");
-  let priceBox    = document.getElementById("price-details");
+  let cart = getCart();
+  let container = document.getElementById("cart-items");
+  let emptyCart = document.querySelector(".empty-cart");
+  let priceBox = document.getElementById("price-details");
   let cartWrapper = document.querySelector(".cart-container");
 
   // Clear current content before re-rendering
   container.innerHTML = "";
-  priceBox.innerHTML  = "";
+  priceBox.innerHTML = "";
 
   // Hide both sections first
-  emptyCart.style.display   = "none";
+  emptyCart.style.display = "none";
   cartWrapper.style.display = "none";
 
   if (cart.length === 0) {
@@ -213,7 +213,7 @@ function renderCart() {
       `;
     });
 
-    let discount    = ((5 / 100) * total).toFixed(2);
+    let discount = ((5 / 100) * total).toFixed(2);
     let finalAmount = (total - discount).toFixed(2);
 
     priceBox.innerHTML = `
