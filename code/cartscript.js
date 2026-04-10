@@ -18,12 +18,6 @@ if (document.getElementById("slider")) {
     });
     dotsWrap.appendChild(dot);
   });
-
-  for (var i = 0; i < slides.length; i++) {
-    const dot = document.createElement("button");
-    dotsWrap.appendChild(dot);
-  }
-
   const dots = dotsWrap.querySelectorAll("button");
 
   function updateDots() {
