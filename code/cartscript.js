@@ -233,3 +233,39 @@ function renderCart() {
 if (document.getElementById("cart-items")) {
   renderCart(); // kick off the cart display
 }
+function createRating() {
+    let allBoxes = document.querySelectorAll(".stars");
+
+    allBoxes.forEach(starBox => {
+        let selected = 0;
+
+        for (let i = 1; i <= 5; i++) {
+            let star = document.createElement("span");
+            star.innerHTML = "★";
+
+            star.addEventListener("click", function () {
+                selected = i;
+                updateStars(i);
+            });
+
+            star.addEventListener("mouseover", function () {
+                updateStars(i);
+            });
+
+            star.addEventListener("mouseout", function () {
+                updateStars(selected);
+            });
+
+            starBox.appendChild(star);
+        }
+
+        function updateStars(count) {
+            let allStars = starBox.querySelectorAll("span");
+            allStars.forEach((s, index) => {
+                s.style.color = index < count ? "gold" : "#ccc";
+            });
+        }
+    });
+}
+
+createRating();
