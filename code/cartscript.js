@@ -216,7 +216,9 @@ function renderCart() {
       <p style="margin-bottom:10px; color:green;">Discount (5%) : - ₹${discount}</p>
       <hr style="margin:10px 0;">
       <h2 style="margin-bottom:15px;">Final: ₹${finalAmount}</h2>
-      <button style="width:100%; padding:10px; background:#fb641b; color:white; border:none; border-radius:5px; font-size:16px; cursor:pointer;">
+      <button onclick="Placeorder()" style="width:100%; padding:10px; background:#fb641b; 
+      color:white; border:none;border-radius:5px; font-size:16px; 
+      cursor:pointer;">
         Place Order
       </button>
       <p style="margin-top:15px; font-size:12px; color:gray; text-align:center;">
@@ -225,7 +227,9 @@ function renderCart() {
     `;
   }
 }
-
+function Placeorder(){
+  alert("Order Placed Successfully")
+}
 
 // =====================
 // CART PAGE — only runs on cart.html
@@ -267,5 +271,4 @@ function createRating() {
         }
     });
 }
-
 createRating();
